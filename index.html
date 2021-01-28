@@ -14,9 +14,73 @@
 
 <body>
 
-    <section class="section questions">
-        
+    <section class="calc">
 
+        <div class="container calc__container">
+            <div class="row calc__row">
+                <div class="calc__box calc__box--left">
+                    <div class="calc__box--left-wrap">
+                        <h3 class="calc__title">Деньги на любые цели</h3>
+                    <div class="calc__input-group calc__input-group--top">
+                        <p class="calc__input-text-left">СУММА КРЕДИТА</p> <p class="calc__input-text-right">₽</p>
+                        <input type="text" value="5000000" class="calc__input calc__input--sum">
+                        <div class="kviz__ansver active no_change">
+                            <div class="range-box">
+                                <div class="range">
+                                    <span class="range__track range__track--sum"></span>
+                                    <input class="range__input range__input--sum" type="range" min="300000" max="20000000" value="5000000" step="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__input-row">
+                            <p class="calc__input-text">от 300 тыс.</p>
+                            <p class="calc__input-text">до 20 млн.</p>
+                        </div>
+                    </div>
+                    <!-- /.calc__input-group -->
+
+                    <div class="calc__input-group">
+                        <p class="calc__input-text-left">СРОК КРЕДИТА</p> <p class="calc__input-text-right">лет</p>
+                        <input type="text" value="5" class="calc__input calc__input--time">
+                        <div class="kviz__ansver active no_change">
+                            <div class="range-box">
+                                <div class="range">
+                                    <span class="range__track range__track--time"></span>
+                                    <input class="range__input range__input--time" type="range" min="1" max="10" value="5" step="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc__input-row">
+                            <p class="calc__input-text">от 1 года</p>
+                            <p class="calc__input-text">до 10 лет.</p>
+                        </div>
+                    </div>
+                    <!-- /.calc__input-group -->
+                    </div>
+                    <p class="calc__description">Расчет калькулятора произведен по ставкам, действующим при условии оформления финансовой защиты к кредиту. Не является публичной офертой.</p>
+                </div>
+
+                <div class="calc__box calc-offer">
+                    <div class="calc-offer__wrap">
+                        <h5 class="calc-offer__title">Наше предложение</h5>
+                        <div class="calc-offer__box calc-offer__rate">
+                            <p class="calc-offer__text">Процентная ставка</p>
+                            <p class="calc-offer__rate-number">4%</p>
+                        </div>
+                        <div class="calc-offer__box calc-offer__pt">
+                            <p class="calc-offer__text">Ежемесячный платеж</p>
+                            <p class="calc__pt">0 ₽</p>
+                        </div>
+                    </div>
+                    <button class="calc__button">Заполнить заявку</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- /.calc -->
+
+    <section class="section questions">
         <div class="questions__container">
             <div class="row questions__row">
                 <div class="questions__box questions__box-girl"><img src="img/questions/girl.png" alt="girl"></div>

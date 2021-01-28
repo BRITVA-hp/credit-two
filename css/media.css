@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1400px) {
   .questions__box-girl {
       margin-right: 50px;
@@ -10,16 +11,95 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .calc__row {
+    padding: 40px 80px;
+  }
   .questions__box-girl {
     margin-right: 20px;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .calc__row {
+    padding: 40px 25px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  .calc__input--sum {
+    padding-right: 45px;
+  }
+  .calc__input-text-left {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .calc__title {
+    font-size: 30px;
+    max-width: 350px;
+    line-height: 42px;
+  }
+  .calc__box {
+    min-height: 410px;
+  }
+  .calc-offer {
+    padding-top: 50px;
+  }
+  .calc__box {
+    flex-basis: 48%;
+  }
+  .calc__row {
+    padding: 20px 20px 40px;
+  }
   .questions {
     padding: 0 20px;
   }
   .questions__box-girl {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .calc__input-text-left {
+    top: -25px;
+  }
+  .calc__input {
+    direction: ltr;
+  }
+  .calc__button {
+    margin: auto;
+  }
+  .calc-offer__pt {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .calc-offer__rate {
+    margin-bottom: 30px;
+  }
+  .calc-offer__title {
+    margin-bottom: 20px;
+  }
+  .calc__box--left {
+    margin-bottom: 50px;
+  }
+  .calc__input-group {
+    margin-bottom: 50px;
+  }
+  .calc__input-group--top {
+    margin-bottom: 70px;
+  }
+  .calc__title {
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  .calc-offer {
+    padding-top: 0;
+  }
+  .calc__box {
+    flex-basis: 100%;
+    min-height: 0;
+  }
+  .calc-offer__title {
+    text-align: left;
   }
 }
 @media screen and (max-width: 576px) {
@@ -29,7 +109,29 @@
     margin-bottom: 25px;
   }
   .questions__question-title, .questions__question-content {
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 14px;
     line-height: 20px;
+  }
+  .calc__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .calc__input, .calc-offer__title, .calc__input-text-right {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .calc__description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .calc-offer__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .calc__button {
+    padding: 20px 0;
+    width: 100%;
   }
 }
