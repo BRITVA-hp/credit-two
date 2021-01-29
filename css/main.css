@@ -481,5 +481,44 @@ button:focus {
 
 .case {
     margin-bottom: 60px;
+    padding: 0 20px;
+}
+.case__img {
+    margin-right: 70px;
+}
+.case__box {
+    padding-top: 20px;
+}
+.case__title {
+    font-family: 'Alkes-Black';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 67px;
+    max-width: 670px;
+    margin-bottom: 60px;
+}
+.case__ul {
+    display: flex;
+    list-style-image: url(../img/case/circle.png);
+}
+.case__li-wrap--left {
+    margin-right: 70px;
+}
+.case__li {
+    font-family: 'Alkes-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    border-bottom: 1px solid #E7E7E7;
+    height: 70px;
+    max-width: 370px;
+    margin-bottom: 10px;
+    padding-right: 70px;
+    padding-left: 10px;
+}
+.case__li--3, .case__li--6 {
+    border-bottom: none;
 }
 

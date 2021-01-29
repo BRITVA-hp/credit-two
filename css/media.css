@@ -31,6 +31,10 @@
   .calc__input--time {
     padding-left: 77%;
   }
+  .case__li {
+    padding-right: 0;
+    max-width: 380px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .calc__row {
@@ -38,6 +42,12 @@
   }
   .questions__box-girl {
     margin-right: 20px;
+  }
+  .case__row {
+    align-items: center;
+  }
+  .case__box {
+    padding-top: 0;
   }
 }
 
@@ -48,6 +58,16 @@
 }
 
 @media screen and (max-width: 992px) {
+  .case__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .case__img {
+    display: none;
+  }
+  .case__row {
+    justify-content: center;
+  }
   .case {
     margin-bottom: 40px;
   }
@@ -164,6 +184,26 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .case__row {
+    justify-content: flex-start;
+  }
+  .case__title {
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 330px;
+    margin-bottom: 40px;
+  }
+  .case__li {
+    list-style-image: url(../img/case/tick.png);
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 10px;
+    height: 60px;
+  }
+  .case__ul {
+    flex-direction: column;
+    padding-left: 15px;
+  }
   .calc-offer__box {
     padding: 10px 15px;
   }
@@ -171,6 +211,7 @@
     padding: 0;
   }
   .questions__title {
+    padding-top: 0;
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 25px;
