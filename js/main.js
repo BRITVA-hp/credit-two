@@ -1,8 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
 
   const questions = document.querySelectorAll('.questions__question-title'),
-        sum = document.querySelector('.calc__input--sum'),
-        time = document.querySelector('.calc__input--time');
+        sumInput = document.querySelector('.calc__input--sum'),
+        timeInput = document.querySelector('.calc__input--time'),
+        payt = document.querySelector('.calc__pt'),
+        rangeTimeInput = document.querySelector('.range__input--time'),
+        rangeSumInput = document.querySelector('.range__input--sum');
 
   // accordion
 
@@ -14,7 +17,32 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // range
+  // range + calc
+
+  // маска
+  function prettify(num) {
+    var n = num.toString();
+    return n.replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ');
+  }
+
+  function getPayment(sum, period, rate) {
+    // *
+    // * sum - сумма кредита
+    // * period - срок в годах
+    // * rate - годовая ставка в процентах
+    // * payt - поле, куда будет вывобиться платеж
+    let i,
+        koef;
+
+    // ставка в месяц
+    i = (rate / 12) / 100;
+
+    // коэффициент аннуитета
+    koef = (i * (Math.pow(1 + i, period * 12))) / (Math.pow(1 + i, period * 12) - 1);
+
+    // итог
+    payt.textContent = (sum * koef).toFixed();
+  }
 
   function range(input, progress, content) {
     $(input).each(function(i, elem) {
@@ -36,8 +64,45 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  range('.range__input--sum', '.range__track--sum', sum);
-  range('.range__input--time', '.range__track--time', time);
+  function calc() {
+      let sum = +sumInput.value.replace(/\D/g, ''),
+          period = +timeInput.value.replace(/\D/g, '');
+
+      getPayment(sum, period, 4);
+  }
+
+  function checkSymbols(input, event, maxValue) {
+    input.addEventListener(event, () => {
+      if (maxValue) {
+        if (input.value[0] == 0) {
+            input.value = input.value.replace(/./g, '');
+        }
+
+        input.value = input.value.replace(/\D/g, '');
+
+        input.value = prettify(input.value);
+    
+        if (+input.value.replace(/\D/g, '') > maxValue) {
+            input.value = prettify(maxValue);
+        }
+      }
+      if ((+sumInput.value.replace(/\D/g, '') >= 300000 && +sumInput.value.replace(/\D/g, '') <= 20000000) && (+timeInput.value.replace(/\D/g, '') >= 1 && +timeInput.value.replace(/\D/g, '') <= 10)) {
+        calc();
+      } else {
+        payt.textContent = '0';
+      }
+        
+    });
+  }
+
+  range('.range__input--sum', '.range__track--sum', sumInput);
+  range('.range__input--time', '.range__track--time', timeInput);
+
+  checkSymbols(sumInput, 'input', 20000000);
+  checkSymbols(timeInput, 'input', 10);
+  checkSymbols(rangeSumInput, 'change');
+  checkSymbols(rangeTimeInput, 'change');
+
 
 
 });

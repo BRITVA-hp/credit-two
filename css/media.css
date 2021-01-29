@@ -1,4 +1,12 @@
 
+@media screen and (max-width: 1450px) {
+  .calc__input {
+    padding-left: 64%;
+  }
+  .calc__input--time {
+    padding-left: 80%;
+  }
+}
 @media screen and (max-width: 1400px) {
   .questions__box-girl {
       margin-right: 50px;
@@ -7,9 +15,23 @@
   .questions__title {
     margin-bottom: 50px;
   }
+  .calc__input {
+    padding-left: 60%;
+  }
+  .calc__input--time {
+    padding-left: 80%;
+  }
   
 }
 
+@media screen and (max-width: 1300px) {
+  .calc__input {
+    padding-left: 56%;
+  }
+  .calc__input--time {
+    padding-left: 77%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .calc__row {
     padding: 40px 80px;
@@ -26,6 +48,24 @@
 }
 
 @media screen and (max-width: 992px) {
+  .case {
+    margin-bottom: 40px;
+  }
+  .calc {
+    margin-bottom: 50px;
+  }
+  .calc__input-text-right {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .calc__input {
+    padding-left: 235px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .calc__input--time {
+    padding-left: 305px;
+  }
   .calc__input--sum {
     padding-right: 45px;
   }
@@ -40,12 +80,10 @@
   }
   .calc__box {
     min-height: 410px;
+    flex-basis: 48%;
   }
   .calc-offer {
     padding-top: 50px;
-  }
-  .calc__box {
-    flex-basis: 48%;
   }
   .calc__row {
     padding: 20px 20px 40px;
@@ -57,13 +95,36 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 900px) {
+  .calc__input {
+    padding-left: 213px;
+  }
+  .calc__input--time {
+    padding-left: 285px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .calc__input {
+    padding-left: 185px;
+  }
+  .calc__input--time {
+    padding-left: 260px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .calc__input {
+    padding-left: 175px;
+  }
+  .calc__input--time {
+    padding-left: 245px;
+  }
+}
 @media screen and (max-width: 767px) {
   .calc__input-text-left {
     top: -25px;
   }
   .calc__input {
-    direction: ltr;
+    padding-left: 20px;
   }
   .calc__button {
     margin: auto;
@@ -103,6 +164,12 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .calc-offer__box {
+    padding: 10px 15px;
+  }
+  .calc__container {
+    padding: 0;
+  }
   .questions__title {
     font-size: 24px;
     line-height: 34px;
@@ -118,7 +185,7 @@
     font-size: 24px;
     line-height: 34px;
   }
-  .calc__input, .calc-offer__title, .calc__input-text-right {
+  .calc-offer__title {
     font-size: 18px;
     line-height: 25px;
   }

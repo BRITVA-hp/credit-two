@@ -6,18 +6,18 @@
     font-display: swap; }
   
 @font-face {
-font-family: 'Alkes-Bold';
-src: url("../fonts/Alkes-Bold.woff") format("woff"), url("../fonts/Alkes-Bold.woff2") format("woff");
-font-weight: normal;
-font-style: normal;
-font-display: swap; }
+    font-family: 'Alkes-Bold';
+    src: url("../fonts/Alkes-Bold.woff") format("woff"), url("../fonts/Alkes-Bold.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; }
 
 @font-face {
-font-family: 'Alkes-Regular';
-src: url("../fonts/Alkes-Regular.woff") format("woff"), url("../fonts/Alkes-Regular.woff2") format("woff");
-font-weight: normal;
-font-style: normal;
-font-display: swap; }
+    font-family: 'Alkes-Regular';
+    src: url("../fonts/Alkes-Regular.woff") format("woff"), url("../fonts/Alkes-Regular.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; }
 /* base */
 
 * {
@@ -82,10 +82,7 @@ button {
 }
 
 button:focus {
-    box-shadow: none !important;
-    border: none;
     outline: none;
-    margin: 0px;
 }
 
 .row {
@@ -225,6 +222,7 @@ button:focus {
 
 .calc {
     padding: 20px;
+    margin-bottom: 90px;
 }
 .calc input {
     width: 100%;
@@ -282,9 +280,9 @@ button:focus {
     margin-bottom: 30px;
 }
 .calc__input {
-    direction: rtl;
     padding: 10px 20px;
-    padding-right: 70px;
+    padding-left: 66%;
+    padding-right: 50px;
     font-family: 'Alkes-Bold';
     font-style: normal;
     font-weight: normal;
@@ -292,6 +290,9 @@ button:focus {
     line-height: 34px;
     border: 1px solid #D9E0E8;
     border-radius: 6px;
+}
+.calc__input--time {
+    padding-left: 82%;
 }
 .calc__input--range {
     cursor: pointer;
@@ -474,5 +475,11 @@ button:focus {
     color: #aaaaaa;
     bottom: -30px;
     font-size: 16px;
+}
+
+/* case */
+
+.case {
+    margin-bottom: 60px;
 }
 
