@@ -8,6 +8,15 @@
   }
 }
 @media screen and (max-width: 1400px) {
+  .success {
+    padding: 180px 55px 60px 0 !important;
+  }
+  .step--9 {
+    padding-top: 70px !important;
+  }
+  .step {
+    padding: 60px 150px 60px 0;
+  }
   .questions__box-girl {
       margin-right: 50px;
       align-self: center;
@@ -25,6 +34,18 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .success-quiz__box {
+    flex-basis: 53%;
+  }
+  .success__img {
+    width: 200px;
+  }
+  .quiz__box--img {
+    width: 350px;
+  }
+  .step {
+    padding: 60px 100px 60px 0;
+  }
   .calc__input {
     padding-left: 56%;
   }
@@ -37,6 +58,12 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .step {
+    padding: 60px 60px 60px 0;
+  }
+  .quiz__box--img {
+    left: 90px;
+  }
   .calc__row {
     padding: 40px 80px;
   }
@@ -52,12 +79,67 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .success__text {
+    margin-right: 20px;
+  }
   .calc__row {
     padding: 40px 25px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .quiz__box-subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .quiz-tel {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .quiz__input-text--fix {
+    height: 62px;
+    padding: 5px 20px;
+  }
+  .quiz__input-text--fix span {
+    display: block;
+    max-width: 290px;
+  }
+  .step__button {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 40px;
+  }
+  .success__button {
+    padding: 15px 50px;
+  }
+  .quiz__box {
+    flex-basis: 43%;
+  }
+  .success-quiz__box {
+    flex-basis: 50%;
+  }
+  .step {
+    height: 613px;
+    padding: 30px 30px 30px 0;
+  }
+  .quiz__box--img {
+    width: 250px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .quiz__input-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .quiz__box-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .success__title {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
   .case__title {
     font-size: 36px;
     line-height: 45px;
@@ -140,6 +222,92 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .success__title {
+    margin-bottom: 10px;
+  }
+  .quiz__box-subtitle {
+    margin: auto;
+  }
+  .success__text {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .success {
+    padding: 45px 30px !important;
+  }
+  .success-quiz__box-wrap {
+    flex-direction: column;
+  }
+  .success__img {
+    margin: auto;
+    margin-bottom: 30px;
+    order: -1;
+  }
+  .step__button-wrap {
+    justify-content: space-between;
+  }
+  .step {
+    height: auto;
+  }
+  .quiz-tel {
+    margin-bottom: 30px;
+  }
+  .quiz__input-text--fix {
+    height: auto;
+    padding: 20px;
+  }
+  .quiz__input-text--fix span {
+    display: block;
+    max-width: 100%;
+  }
+  .quiz__label:last-of-type {
+    margin-bottom: 30px;
+  }
+  .quiz__box {
+    flex-basis: 100%;
+  }
+  .quiz__box--img {
+    display: none;
+  }
+  .quiz__title {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Alkes-Regular';
+    max-width: 440px;
+    margin-bottom: 70px;
+  }
+  .quiz__title span {
+    font-family: 'Alkes-Bold';
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .quiz__button {
+    padding: 17px 30px;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #08A652;
+  }
+  .quiz__button:hover {
+    background: #08A652;
+    color: #FFFFFF;
+    border: 2px solid #08A652;
+  }
+  .quiz__ring--mobile, .quiz__circle--mobile {
+    display: block;
+  }
+  .quiz {
+    padding: 60px 10px;
+  }
+  .quiz__container {
+    padding: 60px 20px;
+  }
+  .quiz__ring {
+    display: none;
+  }
+  .quiz__circle {
+    display: none;
+  }
   .calc__input-text-left {
     top: -25px;
   }
@@ -184,6 +352,21 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .quiz__input-text {
+    padding-right: 10px;
+  }
+  .step {
+    padding: 35px 10px;
+  }
+  .quiz__button {
+    width: 100%;
+  }
+  .quiz__button span {
+    display: none;
+  }
+  .quiz__title {
+    max-width: 260px;
+  }
   .case__row {
     justify-content: flex-start;
   }
@@ -241,5 +424,16 @@
   .calc__button {
     padding: 20px 0;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .quiz__input-text--fix {
+    height: 62px;
+    padding: 5px 20px;
+  }
+  .quiz__input-text--fix span {
+    display: block;
+    max-width: 290px;
   }
 }

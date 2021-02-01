@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
         timeInput = document.querySelector('.calc__input--time'),
         payt = document.querySelector('.calc__pt'),
         rangeTimeInput = document.querySelector('.range__input--time'),
-        rangeSumInput = document.querySelector('.range__input--sum');
+        rangeSumInput = document.querySelector('.range__input--sum'),
+        dateText = document.querySelector('.calc__input-text-right--date');
 
   // accordion
 
@@ -60,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
         step = $(this).attr('step');
         position = 100 / (max - step) * (val - step);
         $(this).parent().find(progress).width(position + "%");
-        content.value = val;
+        content.value = prettify(val);
     });
   }
 
@@ -70,6 +71,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
       getPayment(sum, period, 4);
   }
+
+
 
   function checkSymbols(input, event, maxValue) {
     input.addEventListener(event, () => {
@@ -91,13 +94,25 @@ window.addEventListener('DOMContentLoaded', () => {
       } else {
         payt.textContent = '0';
       }
-        
+       
+      switch (timeInput.value) {
+        case '1': 
+          dateText.textContent = 'год';
+          break;
+
+        case '2':
+        case '3':
+        case '4':
+          dateText.textContent = 'года';
+          break;
+        default:
+          dateText.textContent = 'лет';
+      }
     });
   }
 
   range('.range__input--sum', '.range__track--sum', sumInput);
   range('.range__input--time', '.range__track--time', timeInput);
-
   checkSymbols(sumInput, 'input', 20000000);
   checkSymbols(timeInput, 'input', 10);
   checkSymbols(rangeSumInput, 'change');
