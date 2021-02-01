@@ -1,4 +1,23 @@
-
+@media screen and (max-width: 1600px) {
+  .stages__container {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .stages__card-main {
+    grid-area: 1/1/3/2;
+  }
+  .stages__card--border-1 {
+    grid-area: 1/2/3/3;
+  }
+  .stages__card--border-2 {
+    grid-area: 3/1/5/2;
+  }
+  .stages__card--border-3 {
+    grid-area: 3/2/5/3;
+  }
+  .stages__img {
+    grid-row: 1/5;
+  }
+}
 @media screen and (max-width: 1450px) {
   .calc__input {
     padding-left: 64%;
@@ -8,6 +27,12 @@
   }
 }
 @media screen and (max-width: 1400px) {
+  .stages__card-content-title {
+    margin-bottom: 20px;
+  }
+  .stages__img {
+    grid-row: 2/5;
+  }
   .success {
     padding: 180px 55px 60px 0 !important;
   }
@@ -58,6 +83,25 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .stages__card-content-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .stages__card-content-text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .stages__container {
+    grid-gap: 20px;
+  }
+  .stages__card-title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .stages__card-title--big {
+    font-size: 50px;
+    line-height: 70px;
+  }
   .step {
     padding: 60px 60px 60px 0;
   }
@@ -88,6 +132,12 @@
 }
 
 @media screen and (max-width: 992px) {
+  .stages__container {
+    grid-template: 1fr 1fr/ 1fr 1fr;
+  }
+  .stages__img {
+    display: none;
+  }
   .quiz__box-subtitle {
     font-size: 18px;
     line-height: 25px;
@@ -222,6 +272,27 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .stages__container {
+    padding: 35px 10px;
+    grid-gap: 10px;
+  }
+  .stages__card-content-text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .stages__card-content-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .stages__card-title--big {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .stages__card-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
   .success__title {
     margin-bottom: 10px;
   }
@@ -352,6 +423,18 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .stages__container {
+    padding-top: 0;
+  }
+  .stages__card-main, .stages__card--border-3, .stages__card--border-2, .stages__card--border-1 {
+    grid-area: auto;
+  }
+  .stages__card-main {
+    padding: 75px 20px 0 20px;
+  }
+  .stages__container {
+    grid-template: repeat(4, 1fr)/1fr;
+  }
   .quiz__input-text {
     padding-right: 10px;
   }
