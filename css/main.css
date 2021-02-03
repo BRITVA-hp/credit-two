@@ -524,10 +524,17 @@ button:focus {
 
 /* quiz */
 
+.html__quiz {
+    background: #F0F3F6;
+}
+
 .quiz {
     background: #F0F3F6;
     position: relative;
     padding: 70px 20px 100px 20px;
+}
+.quiz--2, .quiz--3, .quiz--4, .quiz--5, .quiz--6, .quiz--7, .quiz--8, .quiz--9, .quiz--success {
+    display: none;
 }
 .quiz__ring {
     left: 0px;
